@@ -1,5 +1,6 @@
 # social_media
 
+【csb】
 
 
 import delimited "https://raw.githubusercontent.com/andoresearch/social_media/main/Ehrmann-Wabitsch2022/mmc4.csv", clear case(preserve)
@@ -16,4 +17,14 @@ tsset new_date
 reg ln_tweetsDaily L(-5/3).pressConf tweetECB L(0/20).whatever    EconBulletin  MonPolAccounts speechOtherBoard speechPresident n n2 i.dow i.month dec2* dec31 jan0* easter* good* corpus ascension whitMon may* nov01 oct03, r
 
 
+
+
+
+【dta】
+use "https://raw.githubusercontent.com/andoresearch/social_media/main/Ehrmann-Wabitsch2022/mmc4.dta", clear
+
+tsset date
+
+
+reg ln_tweetsDaily L(-5/3).pressConf tweetECB L(0/20).whatever    EconBulletin  MonPolAccounts speechOtherBoard speechPresident n n2 i.dow i.month dec2* dec31 jan0* easter* good* corpus ascension whitMon may* nov01 oct03, r
 
