@@ -2,7 +2,6 @@
 
 【csb】
 
-
 import delimited "https://raw.githubusercontent.com/andoresearch/social_media/main/Ehrmann-Wabitsch2022/mmc4.csv", clear case(preserve)
 
 * 文字列を日付型に変換
@@ -19,8 +18,11 @@ reg ln_tweetsDaily L(-5/3).pressConf tweetECB L(0/20).whatever    EconBulletin  
 
 
 
+///////////////
+
 
 【dta】
+
 use "https://raw.githubusercontent.com/andoresearch/social_media/main/Ehrmann-Wabitsch2022/mmc4.dta", clear
 
 tsset date
